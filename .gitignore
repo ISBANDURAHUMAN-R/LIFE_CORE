@@ -1,0 +1,11 @@
+node_modules/
+# Python virtual env
+venv/
+__pycache__/
+*.pyc
+# Environment files
+.env
+# Build artifacts
+.next/
+out/
+dist/
