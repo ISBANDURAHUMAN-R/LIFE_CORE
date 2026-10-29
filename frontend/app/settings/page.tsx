@@ -6,7 +6,7 @@ import { Cog6ToothIcon, ServerIcon, CircleStackIcon, ArrowPathIcon, CheckCircleI
 export default function SettingsPage() {
   const [testingBackend, setTestingBackend] = useState(false);
   const [backendStatus, setBackendStatus] = useState<'idle' | 'online' | 'offline'>('idle');
-  const [apiUrl, setApiUrl] = useState('http://localhost:8000/api');
+  const [apiUrl, setApiUrl] = useState(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8001/api');
   const [resetSuccess, setResetSuccess] = useState(false);
 
   const testConnection = async () => {

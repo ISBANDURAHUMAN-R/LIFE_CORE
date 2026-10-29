@@ -131,9 +131,9 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 **Option B — Running the Backend API:**
 ```bash
 pip install -r backend/requirements.txt
-python -m uvicorn backend.main:app --reload --port 8000
+python -m uvicorn backend.main:app --reload --port 8001
 ```
-Open interactive Swagger API documentation at **[http://localhost:8000/docs](http://localhost:8000/docs)**.
+Open interactive Swagger API documentation at **[http://localhost:8001/docs](http://localhost:8001/docs)**.
 
 ---
 

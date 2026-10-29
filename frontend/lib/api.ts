@@ -60,7 +60,7 @@ export interface SimulationResult {
   recommendation: string;
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8001/api';
 
 // Intelligent Local Fallback State
 const INITIAL_ACTIVITIES: Activity[] = [

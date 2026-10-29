@@ -7,6 +7,6 @@
     "dev": "npm --prefix frontend run dev",
     "build": "npm --prefix frontend run build",
     "start": "npm --prefix frontend run start",
-    "backend": "python -m uvicorn backend.main:app --reload --port 8000"
+    "backend": "python -m uvicorn backend.main:app --reload --reload-dir backend --port 8001"
   }
 }
