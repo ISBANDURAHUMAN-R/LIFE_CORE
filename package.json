@@ -1,0 +1,12 @@
+{
+  "name": "life-core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LIFE_CORE - Personal LifeOS Command Center",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start",
+    "backend": "python -m uvicorn backend.main:app --reload --port 8000"
+  }
+}

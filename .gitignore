@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json
+*/package-lock.json
+
+# Next.js Build Outputs
+.next/
+*/.next/
+out/
+build/
+dist/
+.turbo/
+
+# Python Virtual Environments & Bytecode
+venv/
+.venv/
+env/
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Environment Variables & Secrets
+.env
+.env*.local
+*.env
+
+# SQLite & Databases
+*.db
+*.sqlite
+*.sqlite3
+lifeos.db
+backend/lifeos.db
+
+# Logs & Temporary Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
