@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="LIFE_CORE Banner" width="100%">
+</p>
+
 # 🧠 LIFE_CORE // NEURAL LIFE COMMAND OS
 
 <div align="center">
