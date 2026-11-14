@@ -2,7 +2,7 @@
   <img src="assets/banner.png" alt="LIFE_CORE Banner" width="100%">
 </p>
 
-# 🧠 LIFE_CORE // NEURAL LIFE COMMAND OS
+# ◈ LIFE_CORE // NEURAL LIFE COMMAND OS
 
 <div align="center">
 
@@ -20,7 +20,7 @@
 
 ---
 
-## ⚡ What is LIFE_CORE?
+## ✦ What is LIFE_CORE?
 
 **LIFE_CORE** treats human performance and personal development as a feedback-driven cybernetic system. Rather than fragmenting productivity across multiple disjointed applications, LIFE_CORE consolidates goals, cognitive load, deliberate practice, habits, and predictive analytics into a unified, zero-latency command center.
 
@@ -28,7 +28,7 @@ Designed with an **Obsidian Black & Crimson Red** command aesthetic, the interfa
 
 ---
 
-## 🛡️ Security Architecture & Hardening
+## § Security Architecture & Hardening
 
 LIFE_CORE is built with defense-in-depth security principles across both frontend and backend layers:
 
@@ -46,7 +46,7 @@ LIFE_CORE is built with defense-in-depth security principles across both fronten
 
 ---
 
-## 🖥️ System Architecture
+## ⬡ System Architecture
 
 ```text
                            ┌──────────────────────────────┐
@@ -72,40 +72,40 @@ LIFE_CORE is built with defense-in-depth security principles across both fronten
 
 ---
 
-## ✨ Core Telemetry Modules
+## ❖ Core Telemetry Modules
 
-### 1. 🎯 Command Center Dashboard (`/`)
+### 1. ▪ Command Center Dashboard (`/`)
 * **Real-time Biometric Gauges**: Focus Output, Cognitive Energy Reserve, Productivity Index, Discipline Streak.
 * **Neural Focus Protocol**: Interactive SVG circular countdown timer with *Pomodoro* (25m), *Deep Work* (50m), and *Rest* modes, live distraction logging, and automated kernel sync.
 * **7-Day Telemetry Chart**: Responsive visual comparison of daily focus cycles vs. cognitive energy levels.
 * **Strategic Milestone Quotas**: Real-time progress bars tracking quarterly deliverables.
 
-### 2. 📋 Session Chronicle (`/activities`)
+### 2. ▫ Session Chronicle (`/activities`)
 * Multi-category log filtering (*Engineering*, *Health*, *Learning*, *Operations*, *Focus*).
 * Detailed metrics recording session duration, energy cost (-%), and focus intensity (%).
 * Instant deletion and atomic commit capabilities.
 
-### 3. 🚩 Objective Engine (`/goals`)
+### 3. ▴ Objective Engine (`/goals`)
 * Dedicated target commitment tracker with total hour commitments and deadline horizons.
 * Milestone progress bars, status badges (*Active Crucible*, *Final Sprint*), and timeline countdowns.
 
-### 4. 💡 What‑If Predictive Simulator (`/whatif`)
+### 4. ▿ What‑If Predictive Simulator (`/whatif`)
 * Interactive hypothesis testing sliders: Daily Focus Hours, Sleep Duration, Habit Compliance Rate, and Forecast Horizon.
 * Dynamic computation of **Burnout Risk Score**, **Compound Skill Acquisition Velocity**, and **Goal Probability Rating**.
 * Actionable AI Cognitive Directives tailored to current physiological parameters.
 
-### 5. 📊 Deep Telemetry & Analytics (`/analytics`)
+### 5. ⬢ Deep Telemetry & Analytics (`/analytics`)
 * Flow state efficiency ratios and distraction event latency.
 * Multi-segmented energy allocation breakdown across life disciplines.
 
-### 6. ⚙️ Settings & Security Center (`/settings`)
+### 6. ● Settings & Security Center (`/settings`)
 * Live backend health protocol tester (`/api/health`).
 * Local repository management and seed data reset.
 * System architecture and security compliance audit.
 
 ---
 
-## 🚀 Quick Start Guide
+## ▲ Quick Start Guide
 
 ### Prerequisites
 * **Node.js** v18+ (tested on Node v24)
@@ -141,7 +141,7 @@ Open interactive Swagger API documentation at **[http://localhost:8001/docs](htt
 
 ---
 
-## 📡 API Reference Overview
+## ▸ API Reference Overview
 
 | Endpoint | Method | Description |
 | :--- | :--- | :--- |
@@ -156,7 +156,7 @@ Open interactive Swagger API documentation at **[http://localhost:8001/docs](htt
 
 ---
 
-## 🎨 Color Palette Reference
+## ◎ Color Palette Reference
 
 | Token | Hex Value | Application |
 | :--- | :--- | :--- |
@@ -168,6 +168,6 @@ Open interactive Swagger API documentation at **[http://localhost:8001/docs](htt
 
 ---
 
-## 📜 License & Integrity
+## ■ License & Integrity
 
 Engineered for high-agency individuals. Developed and maintained under MIT License.
