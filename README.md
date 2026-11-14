@@ -8,11 +8,11 @@
 LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry platform built with Next.js and FastAPI. It integrates focus timing protocols, session logging, predictive what-if simulators, and performance analytics into a single low-latency command center interface.
 
 ## ❖ Key Features
-- ▪ Real-time productivity and focus output dashboard with animated telemetry gauges.
-- ▫ Interactive focus timer supporting Pomodoro (25m), Deep Work (50m), and Rest intervals with distraction logging.
-- ▴ Session activity journal with category filtering, duration tracking, and energy cost ratings.
-- ▿ Predictive simulation module calculating burnout risk and habit velocity based on customizable user parameters.
-- ⬡ Hardened FastAPI backend featuring strict CORS validation, security header middleware, and parameterized SQLite storage.
+- Real-time productivity and focus output dashboard with animated telemetry gauges.
+- Interactive focus timer supporting Pomodoro (25m), Deep Work (50m), and Rest intervals with distraction logging.
+- Session activity journal with category filtering, duration tracking, and energy cost ratings.
+- Predictive simulation module calculating burnout risk and habit velocity based on customizable user parameters.
+- Hardened FastAPI backend featuring strict CORS validation, security header middleware, and parameterized SQLite storage.
 
 ## ⬢ Technologies Used
 - Next.js 13+ (App Router)
