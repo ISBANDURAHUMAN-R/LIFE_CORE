@@ -20,27 +20,27 @@ LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry pl
 ```mermaid
 graph TD
     subgraph Frontend ["Next.js 13+ Command Center (Port 3000)"]
-        UI[Tailwind UI & Telemetry Gauges] --> Hook[TanStack React Query]
-        Hook --> Client[API HTTP Client]
+        UI["Tailwind UI & Telemetry Gauges"] --> Hook["TanStack React Query"]
+        Hook --> Client["API HTTP Client"]
     end
 
     subgraph Security ["Enterprise Security Middleware"]
-        Client --> CORS[Configurable CORS Policy]
-        CORS --> SecHeaders[Security Headers Middleware<br/>nosniff | DENY | strict-origin]
+        Client --> CORS["Configurable CORS Policy"]
+        CORS --> SecHeaders["Security Headers Middleware<br/>nosniff • DENY • strict-origin"]
     end
 
     subgraph Backend ["FastAPI Core Services (Port 8001)"]
-        SecHeaders --> Router[FastAPI REST Endpoints]
-        Router --> SvcFocus[Focus & Timer Service]
-        Router --> SvcSim[Cognitive Simulator Engine]
-        Router --> SvcHabit[Habit & Burnout Analytics]
+        SecHeaders --> Router["FastAPI REST Endpoints"]
+        Router --> SvcFocus["Focus & Timer Service"]
+        Router --> SvcSim["Cognitive Simulator Engine"]
+        Router --> SvcHabit["Habit & Burnout Analytics"]
     end
 
     subgraph Storage ["Persistence Layer"]
-        SvcFocus --> ORM[SQLAlchemy ORM]
+        SvcFocus --> ORM["SQLAlchemy ORM"]
         SvcSim --> ORM
         SvcHabit --> ORM
-        ORM --> DB[(SQLite Database)]
+        ORM --> DB[("SQLite Database")]
     end
 ```
 
