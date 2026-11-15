@@ -4,6 +4,8 @@
 
 # ◈ LIFE_CORE // Neural Life Command OS
 
+[![CI](https://github.com/ISBANDURAHUMAN-R/LIFE_CORE/actions/workflows/ci.yml/badge.svg)](https://github.com/ISBANDURAHUMAN-R/LIFE_CORE/actions/workflows/ci.yml)
+
 ## ◆ About the Project
 LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry platform built with Next.js and FastAPI. It integrates focus timing protocols, session logging, predictive what-if simulators, and performance analytics into a single low-latency command center interface.
 
@@ -13,6 +15,34 @@ LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry pl
 - Session activity journal with category filtering, duration tracking, and energy cost ratings.
 - Predictive simulation module calculating burnout risk and habit velocity based on customizable user parameters.
 - Hardened FastAPI backend featuring strict CORS validation, security header middleware, and parameterized SQLite storage.
+
+## ◆ System Architecture
+```mermaid
+graph TD
+    subgraph Frontend ["Next.js 13+ Command Center (Port 3000)"]
+        UI[Tailwind UI & Telemetry Gauges] --> Hook[TanStack React Query]
+        Hook --> Client[API HTTP Client]
+    end
+
+    subgraph Security ["Enterprise Security Middleware"]
+        Client --> CORS[Configurable CORS Policy]
+        CORS --> SecHeaders[Security Headers Middleware<br/>nosniff | DENY | strict-origin]
+    end
+
+    subgraph Backend ["FastAPI Core Services (Port 8001)"]
+        SecHeaders --> Router[FastAPI REST Endpoints]
+        Router --> SvcFocus[Focus & Timer Service]
+        Router --> SvcSim[Cognitive Simulator Engine]
+        Router --> SvcHabit[Habit & Burnout Analytics]
+    end
+
+    subgraph Storage ["Persistence Layer"]
+        SvcFocus --> ORM[SQLAlchemy ORM]
+        SvcSim --> ORM
+        SvcHabit --> ORM
+        ORM --> DB[(SQLite Database)]
+    end
+```
 
 ## ⬢ Technologies Used
 - Next.js 13+ (App Router)
