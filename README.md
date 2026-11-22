@@ -20,30 +20,74 @@ LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry pl
 
 ## ◆ System Architecture
 ```mermaid
-graph TD
-    subgraph Frontend ["Next.js 13+ Command Center (Port 3000)"]
-        UI["Tailwind UI & Telemetry Gauges"] --> Hook["TanStack React Query"]
-        Hook --> Client["API HTTP Client"]
+
+```mermaid
+flowchart TD
+    A(["INPUT<br/>User Actions & Productivity Data"])
+
+    subgraph Habit ["HABIT BUILDING CYCLE"]
+        H1["1. CHOOSE A HABIT"]
+        H2["2. SET A GOAL"]
+        H3["3. TAKE ACTIONS"]
+        H4["4. REVIEW PROGRESS"]
+        H5["5. IMPROVE"]
+        H6["6. BUILD CONSISTENCY"]
+
+        H1 --> H2 --> H3 --> H4 --> H5 --> H6
+        H6 --> H3
     end
 
-    subgraph Security ["Security Middleware"]
-        Client --> CORS["Configurable CORS Policy"]
-        CORS --> SecHeaders["Security Headers Middleware<br/>nosniff • DENY • strict-origin"]
+    subgraph Frontend ["FRONTEND — Next.js 13+ (Port 3000)"]
+        B["Tailwind UI & Telemetry Dashboard"]
+        C["TanStack React Query"]
+        D["API HTTP Client"]
+        B --> C --> D
     end
 
-    subgraph Backend ["FastAPI Core Services (Port 8001)"]
-        SecHeaders --> Router["FastAPI REST Endpoints"]
-        Router --> SvcFocus["Focus & Timer Service"]
-        Router --> SvcSim["Cognitive Simulator Engine"]
-        Router --> SvcHabit["Habit & Burnout Analytics"]
+    subgraph Security ["SECURITY MIDDLEWARE"]
+        E["CORS Validation"]
+        F["Security Headers<br/>nosniff • DENY • strict-origin"]
+        E --> F
     end
 
-    subgraph Storage ["Persistence Layer"]
-        SvcFocus --> ORM["SQLAlchemy ORM"]
-        SvcSim --> ORM
-        SvcHabit --> ORM
-        ORM --> DB[("SQLite Database")]
+    subgraph Backend ["BACKEND — FastAPI (Port 8001)"]
+        G["FastAPI REST Endpoints"]
+        I["Focus & Timer Service"]
+        J["Cognitive Simulator Engine"]
+        K["Habit & Burnout Analytics"]
+        G --> I
+        G --> J
+        G --> K
     end
+
+    subgraph Storage ["PERSISTENCE LAYER"]
+        L["SQLAlchemy ORM"]
+        M[("SQLite Database")]
+        L --> M
+    end
+
+    N(["OUTPUT<br/>Productivity Analytics<br/>Focus Metrics<br/>Session History<br/>Habit Progress & Predictions"])
+
+    A --> B
+    A --> H1
+    H6 --> B
+    D --> E
+    F --> G
+    I --> L
+    J --> L
+    K --> L
+    M --> N
+    N -.-> B
+    N -.-> H4
+
+    style A fill:#161616,stroke:#ff3030,color:#ffffff
+    style N fill:#161616,stroke:#ff3030,color:#ffffff
+    style H1 fill:#242424,stroke:#ff3030,color:#ffffff
+    style H2 fill:#242424,stroke:#ff3030,color:#ffffff
+    style H3 fill:#242424,stroke:#ff3030,color:#ffffff
+    style H4 fill:#242424,stroke:#ff3030,color:#ffffff
+    style H5 fill:#242424,stroke:#ff3030,color:#ffffff
+    style H6 fill:#242424,stroke:#ff3030,color:#ffffff
 ```
 ## ⬢ Technologies Used
 
