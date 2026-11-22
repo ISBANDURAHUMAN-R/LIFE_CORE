@@ -22,51 +22,51 @@ LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry pl
 
 ```mermaid
 flowchart TD
-    A(["INPUT<br/>User Actions &amp;<br/>Productivity Data"])
+    A(["&nbsp;&nbsp;&nbsp; INPUT &nbsp;&nbsp;&nbsp;<br/>&nbsp; User Actions &amp; &nbsp;<br/>&nbsp; Productivity Data &nbsp;"])
 
-    subgraph Habit ["HABIT BUILDING CYCLE"]
-        H1["1. CHOOSE A HABIT"]
-        H2["2. SET A GOAL"]
-        H3["3. TAKE ACTIONS"]
-        H4["4. REVIEW PROGRESS"]
-        H5["5. IMPROVE"]
-        H6["6. BUILD CONSISTENCY"]
+    subgraph Habit ["&nbsp; HABIT BUILDING CYCLE &nbsp;"]
+        H1["&nbsp; 1. CHOOSE A HABIT &nbsp;"]
+        H2["&nbsp; 2. SET A GOAL &nbsp;"]
+        H3["&nbsp; 3. TAKE ACTIONS &nbsp;"]
+        H4["&nbsp; 4. REVIEW PROGRESS &nbsp;"]
+        H5["&nbsp; 5. IMPROVE &nbsp;"]
+        H6["&nbsp; 6. BUILD CONSISTENCY &nbsp;"]
 
         H1 --> H2 --> H3 --> H4 --> H5 --> H6
         H6 --> H3
     end
 
-    subgraph Frontend ["FRONTEND — Next.js 13+ (Port 3000)"]
-        B["Tailwind UI &amp;<br/>Telemetry Dashboard"]
-        C["TanStack React Query"]
-        D["API HTTP Client"]
+    subgraph Frontend ["&nbsp; FRONTEND — Next.js 13+ &nbsp;"]
+        B["&nbsp; Tailwind UI &amp; &nbsp;<br/>&nbsp; Telemetry Dashboard &nbsp;"]
+        C["&nbsp; TanStack React Query &nbsp;"]
+        D["&nbsp; API HTTP Client &nbsp;"]
         B --> C --> D
     end
 
-    subgraph Security ["SECURITY MIDDLEWARE"]
-        E["CORS Validation"]
-        F["Security Headers<br/>nosniff • DENY • strict-origin"]
+    subgraph Security ["&nbsp; SECURITY MIDDLEWARE &nbsp;"]
+        E["&nbsp; CORS Validation &nbsp;"]
+        F["&nbsp; Security Headers: &nbsp;<br/>&nbsp; nosniff • DENY &nbsp;"]
         E --> F
     end
 
-    subgraph Backend ["BACKEND — FastAPI (Port 8001)"]
-        G["FastAPI REST Endpoints"]
-        I["Focus & Timer Service"]
-        J["Cognitive Simulator Engine"]
-        K["Habit & Burnout Analytics"]
+    subgraph Backend ["&nbsp; BACKEND — FastAPI &nbsp;"]
+        G["&nbsp; FastAPI Endpoints &nbsp;"]
+        I["&nbsp; Focus Timer Service &nbsp;"]
+        J["&nbsp; Cognitive Simulator &nbsp;<br/>&nbsp; Engine &nbsp;"]
+        K["&nbsp; Habit &amp; Burnout &nbsp;<br/>&nbsp; Analytics &nbsp;"]
 
         G --> I
         G --> J
         G --> K
     end
 
-    subgraph Storage ["PERSISTENCE LAYER"]
-        L["SQLAlchemy ORM"]
-        M[("SQLite Database")]
+    subgraph Storage ["&nbsp; PERSISTENCE LAYER &nbsp;"]
+        L["&nbsp; SQLAlchemy ORM &nbsp;"]
+        M[("&nbsp; SQLite Database &nbsp;")]
         L --> M
     end
 
-    N(["OUTPUT<br/>Productivity Analytics<br/>Focus Metrics • History<br/>Habit Progress &amp; Predictions"])
+    N(["&nbsp;&nbsp;&nbsp; OUTPUT &nbsp;&nbsp;&nbsp;<br/>&nbsp; Productivity Analytics &nbsp;<br/>&nbsp; Focus Metrics • History &nbsp;<br/>&nbsp; Habit Predictions &nbsp;"])
 
     A --> B
     A --> H1
