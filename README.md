@@ -23,7 +23,65 @@ LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry pl
 ```mermaid
 flowchart TD
     A(["INPUT<br/>User Actions & Productivity Data"])
+```mermaid
+flowchart TD
+    A(["INPUT<br/>User Actions & Productivity Data"])
 
+    subgraph Habit ["HABIT BUILDING CYCLE"]
+        H1["1. CHOOSE A HABIT"]
+        H2["2. SET A GOAL"]
+        H3["3. TAKE ACTIONS"]
+        H4["4. REVIEW PROGRESS"]
+        H5["5. IMPROVE"]
+        H6["6. BUILD CONSISTENCY"]
+
+        H1 --> H2 --> H3 --> H4 --> H5 --> H6
+        H6 --> H3
+    end
+
+    subgraph Frontend ["FRONTEND — Next.js 13+ (Port 3000)"]
+        B["Tailwind UI & Telemetry Dashboard"]
+        C["TanStack React Query"]
+        D["API HTTP Client"]
+        B --> C --> D
+    end
+
+    subgraph Security ["SECURITY MIDDLEWARE"]
+        E["CORS Validation"]
+        F["Security Headers<br/>nosniff • DENY • strict-origin"]
+        E --> F
+    end
+
+    subgraph Backend ["BACKEND — FastAPI (Port 8001)"]
+        G["FastAPI REST Endpoints"]
+        I["Focus & Timer Service"]
+        J["Cognitive Simulator Engine"]
+        K["Habit & Burnout Analytics"]
+        G --> I
+        G --> J
+        G --> K
+    end
+
+    subgraph Storage ["PERSISTENCE LAYER"]
+        L["SQLAlchemy ORM"]
+        M[("SQLite Database")]
+        L --> M
+    end
+
+    N(["OUTPUT<br/>Productivity Analytics<br/>Focus Metrics<br/>Session History<br/>Habit Progress & Predictions"])
+
+    A --> B
+    A --> H1
+    H6 --> B
+    D --> E
+    F --> G
+    I --> L
+    J --> L
+    K --> L
+    M --> N
+    N -.-> B
+    N -.-> H4
+```
     subgraph Habit ["HABIT BUILDING CYCLE"]
         H1["1. CHOOSE A HABIT"]
         H2["2. SET A GOAL"]
