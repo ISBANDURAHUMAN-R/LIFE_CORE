@@ -81,7 +81,7 @@ flowchart TD
     M --> N
     N -.-> B
     N -.-> H4
-```
+
     subgraph Habit ["HABIT BUILDING CYCLE"]
         H1["1. CHOOSE A HABIT"]
         H2["2. SET A GOAL"]
@@ -146,6 +146,8 @@ flowchart TD
     style H5 fill:#242424,stroke:#ff3030,color:#ffffff
     style H6 fill:#242424,stroke:#ff3030,color:#ffffff
 ```
+
+
 ## ⬢ Technologies Used
 
 - Next.js 13+ (App Router)
