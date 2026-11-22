@@ -19,7 +19,6 @@ LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry pl
 - Hardened FastAPI backend featuring strict CORS validation, security header middleware, and parameterized SQLite storage.
 
 ## ◆ System Architecture
-```mermaid
 
 ```mermaid
 flowchart TD
