@@ -19,8 +19,7 @@ LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry pl
 - Hardened FastAPI backend featuring strict CORS validation, security header middleware, and parameterized SQLite storage.
 
 ## ◆ System Architecture
-
-```
+```mermaid
 graph TD
     subgraph Frontend ["Next.js 13+ Command Center (Port 3000)"]
         UI["Tailwind UI & Telemetry Gauges"] --> Hook["TanStack React Query"]
@@ -46,7 +45,6 @@ graph TD
         ORM --> DB[("SQLite Database")]
     end
 ```
-
 ## ⬢ Technologies Used
 
 - Next.js 13+ (App Router)
