@@ -1,6 +1,6 @@
-&#x20;\<p align="center">\
-&#x20; \<img src="assets/banner.png" alt="LIFE_CORE Banner" width="100%">\
-\</p>
+<p align="center">
+<img src="assets/banner.png" alt="LIFE_CORE Banner" width="100%">
+</p>
 
 # ◈ LIFE_CORE // Neural Life Command OS
 
