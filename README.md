@@ -22,7 +22,7 @@ LIFE_CORE is a personal productivity, habit tracking, and cognitive telemetry pl
 
 ```mermaid
 flowchart TD
-    A(["INPUT<br/>User Actions & Productivity Data"])
+    A(["INPUT<br/>User Actions &amp;<br/>Productivity Data"])
 
     subgraph Habit ["HABIT BUILDING CYCLE"]
         H1["1. CHOOSE A HABIT"]
@@ -37,7 +37,7 @@ flowchart TD
     end
 
     subgraph Frontend ["FRONTEND — Next.js 13+ (Port 3000)"]
-        B["Tailwind UI & Telemetry Dashboard"]
+        B["Tailwind UI &amp;<br/>Telemetry Dashboard"]
         C["TanStack React Query"]
         D["API HTTP Client"]
         B --> C --> D
@@ -66,7 +66,7 @@ flowchart TD
         L --> M
     end
 
-    N(["OUTPUT<br/>Productivity Analytics<br/>Focus Metrics<br/>Session History<br/>Habit Progress & Predictions"])
+    N(["OUTPUT<br/>Productivity Analytics<br/>Focus Metrics • History<br/>Habit Progress &amp; Predictions"])
 
     A --> B
     A --> H1
